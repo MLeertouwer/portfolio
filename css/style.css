@@ -1,0 +1,36 @@
+body {
+    background-color: #C2C5AA;
+    font-family: libertinus, Philosopher, sans-serif;
+}
+
+header {
+    background-color: #B6AD90;
+}
+
+footer {
+    background-color: #A68A64;
+    color: white;
+}
+
+nav {
+    background-color: #A68A64;
+}
+
+.btn {
+    transition-duration: 0.4s;
+    border: 2px solid #C2C5AA;
+    border-radius: 12px;
+    background-color: #C2C5AA;
+    color: black;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #A68A64;
+    color: white;
+}
+
+.card {
+    background-color: #B6AD90;
+    border-radius: 12px;
+}
