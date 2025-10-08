@@ -12,14 +12,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body class="d-flex flex-column h-100">
+    <!--This makes sure the footer sticks to the bottom of the page using display flex and flex-column, and h-100 makes sure the body takes the full height of the viewport. -->
 
     <nav class="navbar navbar-expand-lg navbar-dark">
+        <!--navbar-dark makes the text light colored for dark backgrounds (Or in my case because it looks better), navbar-expand-lg makes sure that the navbar fills the full 
+        screen width once it reaches above 992px, otherwise it collapses into a hamburger menu-->
         <div class="container">
+            <!--The navbar brand is to display the logo in either text, image or both. In my case I thought it was prettier to just use text-->
             <a class="navbar-brand" href="index.html">Melissa's Portfolio</a>
+            <!--This button is a navbar toggler, and once the navbar reaches less than 992 pixels, the toggler icon will be visible
+            the data-bs-target looks for the component/thing that has the same id that has been given in the data-bs-target-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!--This div contains the links in the navbar, and it collapses when the screen size is less than 992px, 
+            the id of navbarNav makes sure the navbar-toggler can find what to display once the toggler is clicked-->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="projects.html">My Projects</a></li>
@@ -28,8 +38,10 @@
             </div>
         </div>
     </nav>
-
+    <!--This is the header, where I put in a welcome, i styled the color of it in a external css file -->
     <header class="text-white text-center py-5">
+        <!--The class i gave to the header makes sure the text has a Y padding of $spacer * 3 by default,
+        that the text is in the center and the text color is white-->
         <div class="container">
             <img src="images/Auteursfoto[8928].jpg" class="rounded float-start" alt="..." height="200">
             <h1 class="display-4">Hi, I'm Melissa</h1>
